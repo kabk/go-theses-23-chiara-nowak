@@ -1,0 +1,595 @@
+
+/* CSS Reset (Tailwind PreFlight) */
+@import url("https://unpkg.com/tailwindcss@%5E3/src/css/preflight.css");
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap");
+
+:root {
+  font-size: 16px;
+}
+
+html {
+font-family: neue-haas-grotesk-display, sans-serif;
+font-weight: 200;
+ font-style: normal;
+ font-size: 1rem;
+ line-height: 1.5;
+ scroll-behavior: smooth;
+
+}
+
+body {
+   margin: 4rem;
+   transition: 1s;
+}
+
+/* Landing Page*/
+
+#landing{
+  opacity: 1;
+  padding-top:15vh;
+  transition: 0.8s;
+  height: 100vh;
+  margin-top: 100px;
+
+}
+
+
+.title>h1 {
+text-align: center;
+font-family: filmotype-yale, sans-serif;
+font-weight: 200;
+font-style: normal;
+font-size: 20vw;
+line-height: 10rem;
+margin-bottom: -180px;
+color: rgb(224, 224, 224);
+}
+
+
+#subTitle{
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+
+}
+
+
+
+/* header */
+
+#header>h1{
+  font-size: 1.8rem;
+  margin-bottom: -10px;
+}
+
+
+ /* Navigation */
+
+ nav{
+  width:100%;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+
+.fw{
+  width:100%;
+}
+.navitem{
+  border-top: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  font-size: 1.2rem;
+  display: inline-block;
+}
+.cw{
+  width:28%;
+}
+.inb{
+  width:8%;
+  text-align: center;
+  border:none;
+}
+.navlist{
+  border-radius: 900%;
+  border: 1px solid black;
+  width:16px;
+  text-align: center;
+  font-size: 0.6rem;
+  margin-top: 4.5px;
+}
+.ch-list{
+  border-radius: 900%;
+  border: 1px solid black;
+  width:16px;
+  padding-left: 1.5px;
+  padding-right: 1px;
+  text-align: center;
+  font-size: 0.6rem;
+  margin-top:80px;
+}
+
+#ch-source, #ch-figures{
+  margin-top:20px !important;
+}
+
+
+
+.navlist:hover{
+  border: 1px solid  #02f574;
+  color: white;
+  background-color: #02f574;
+  cursor: pointer;
+}
+
+.float-right{
+  float:right;
+
+}
+
+
+
+.float-left{
+  float:left;
+  margin-left: -2.5rem;
+}
+
+
+   /* Sticky Header */
+  .sticky-header{
+    position: fixed;
+    top: 20px;
+  }
+
+     /* back to top button */
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 2rem;
+    }
+
+    #BackToTop{
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99;
+      border: 2px solid black;
+      border-radius: 900%;
+      color: black;
+      cursor: pointer;
+      text-align: center;
+      vertical-align: middle;
+      width:60px;
+      height:60px;
+      padding: 10px;
+      font-size: 1rem;
+
+
+      }
+
+      #BackToTop:hover{
+        background-color: #02f574;
+        color: black;
+
+}
+
+
+    #myBtn:hover {
+    color: #02f574;
+    }
+
+
+
+ /* Main Text */
+
+.main-text{
+  letter-spacing: 0.06rem;
+}
+
+.thesis-text {
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.4rem;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 0rem;
+  row-gap: 4rem;
+}
+
+
+.main-text>h2{
+  font-size: 2.5rem;
+  border-bottom: 2px solid black;
+  margin-top: 60px;
+  text-align: left;
+}
+
+
+
+.columns{
+  display: inline-block;
+}
+
+.thesis-text > article > p {
+  margin-bottom: 30px;
+}
+
+.quote{
+  text-align: center;
+  margin: 5%;
+}
+
+
+
+ /* Interjection */
+
+.interjection > * {
+  transition: color 0.9s ease-in-out;
+  color: transparent;
+  margin-left: 35px;
+  margin-right: 5px;
+  font-size: 1rem;
+  font-weight: 400;
+
+}
+
+
+.interjection>h3{
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+
+}
+
+
+.intersecting {
+  color: #6b00f6;
+
+}
+
+/* Footer */
+#sources>h2, #figures>h2{
+  font-size: 2.5rem;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+
+}
+
+
+/* Footnotes */
+
+.fnote{
+ font-size: 0.6em;
+ color: darkgray;
+ display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  margin-top: -50px;
+
+}
+
+.footnotes-list {
+  column-count: 2;
+  column-gap: 40px;
+
+}
+
+ol{
+  list-style-type: decimal;
+
+}
+
+
+.footnote{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+
+
+
+}
+
+.footnote:hover{
+  transition: 0.2s ease-in-out;
+    border: 1px solid #02f574;
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.footnotereverse{
+  margin-left: 5px;
+}
+.footnotereverse:hover{
+    cursor: pointer;
+}
+
+
+/* Sources and List of Figures */
+
+.expand{
+  font-size: 2rem;
+}
+
+.expand:hover{
+  color: #02f574;
+  cursor: pointer;
+}
+
+.sources-list{
+  width: 80%;
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-bottom: 60px;
+  text-align: left;
+  color: #000;
+}
+
+
+/* colophon */
+.colophon-bottom{
+  float: left;
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: black;
+
+}
+
+.colophon-right{
+  float: right;
+  margin-top: 40px;
+  margin-right: 10px;
+  width: 40%;
+  font-size: 0.8rem;
+}
+
+
+
+/* Images */
+
+/* .colSpan{
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+  margin-right: -10%;
+}*/
+
+.colSpan{
+  margin-bottom: 60px;
+  margin-top: 60px;
+}
+figure{
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+figcaption{
+  margin-top: 10px;
+  font-size: 0.8rem;
+  text-align: center;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+img{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40%;
+  height: auto;
+}
+
+
+.fig-big{
+  max-width: 24% !important;
+}
+
+.fig-inline{
+  display: inline-flex;
+
+}
+
+.fig-inline>img{
+  flex: 33.33%;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: -50px;
+  max-width: 25% !important;
+
+}
+
+
+
+a{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+a:hover{
+  color: #02f574;
+}
+
+ /* Empowerment */
+
+
+h1.empoweredmain{
+  color: rgb(249, 201, 245);
+ /*  text-shadow: 1px 1px 1px #000;*/
+}
+
+h2.empoweredheading{
+  background-image: url(Images/ze_sparkles.gif);
+  background-repeat: repeat;
+  background-position: center center;
+  background-size: 100px 100px;
+  border:none;
+  text-align: center;
+  font-family: filmotype-yale, sans-serif;
+  color: white;
+  font-size: 4.5rem;
+  text-shadow: 2px 2px 2px #000;
+  margin-bottom: 20px;
+}
+
+
+h2.empoweredheading::before {
+    content: '💖';
+}
+h2.empoweredheading::after {
+    content: ' 💖';
+}
+
+
+.empowerment{
+  display: none;
+  position: fixed;
+  right: 20px;
+  background-color: white;
+  border-radius: 50px;
+  border: 1px solid rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-size: 0.8em;
+  padding: 6px 10px;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.empowerment:hover {
+  background-color: magenta;
+  color: white;
+  cursor: pointer;
+}
+
+.empowered{
+  background-color: #EDA1FF;
+
+}
+
+.empowermentActive{
+  background-color: magenta;
+  color: #000;
+}
+
+.glow{
+  box-shadow: 0px 0px 136px -15px rgba(255,242,0,1);
+}
+
+.Fem{
+  color: white;
+}
+
+.sws{
+  display: none;
+}
+/* Mobile */
+@media (max-width: 960px) {
+  #landing{
+    width:100% !important;
+  }
+
+
+}
+@media (max-width: 779px) {
+    html {
+      font-size: 0.75rem;
+    }
+    body {
+       margin: 0rem !important;
+       padding:1rem !important;
+    }
+
+
+    
+  .title{
+    margin-top: 150px;
+  }
+
+    .title>h1 {
+      line-height: 5rem;
+  
+      }
+      
+
+      .main-text>h2{
+        font-size: 2rem;
+      }
+      
+      #subTitle{
+        font-size: 1rem; 
+      
+      }
+      
+
+    .float-left{
+      margin-left: 0px;
+      margin-right: 15px;
+    }
+    #header{
+      width:100% !important;
+    }
+    .cw{
+      width:100%;
+    }
+    .navitem{
+      margin-left:0px !important;
+    }
+    #BackToTop{
+      background-color: #EDA1FF;
+    }
+    .hws{
+      display: none;
+    }
+    h2.empoweredheading{
+      font-size: 12vw;
+    }
+    .thesis-header {
+      flex-direction: column;
+    }
+
+    .thesis-text {
+      display: grid;
+      grid-template-columns: 1fr;
+      column-gap: 2rem;
+      row-gap: 2rem;
+      font-size: 1.2rem !important;
+      text-align: left;
+    }
+    #sources{
+      max-width: 90vw;
+    }
+    ol>li>a{
+      text-overflow: ellipsis;
+    }
+    .interjection > * {
+      transition: color 0.9s ease-in-out;
+      color: transparent;
+      font-size: 1.2rem;
+      margin-left: 0;
+
+    }
+
+    .interjection>h2{
+      margin-bottom: 8px;
+
+    }
+
+    .intersecting {
+      color: rgb(166, 0, 255);
+
+    }
+
+
+  }
