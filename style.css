@@ -142,6 +142,7 @@ color: rgb(224, 224, 224);
   .sticky-header{
     position: fixed;
     top: 20px;
+    z-index:99;
   }
 
      /* back to top button */
@@ -468,8 +469,7 @@ h2.empoweredheading::after {
 }
 
 .empowerment:hover {
-  background-color: magenta;
-  color: white;
+
   cursor: pointer;
 }
 
@@ -502,6 +502,13 @@ h2.empoweredheading::after {
 
 
 }
+@media (min-width: 779px) {
+  .empowerment:hover {
+    background-color: magenta;
+    color: white;
+
+  }
+}
 @media (max-width: 779px) {
     html {
       font-size: 0.75rem;
@@ -512,26 +519,26 @@ h2.empoweredheading::after {
     }
 
 
-    
+
   .title{
     margin-top: 150px;
   }
 
     .title>h1 {
       line-height: 5rem;
-  
+
       }
-      
+
 
       .main-text>h2{
         font-size: 2rem;
       }
-      
+
       #subTitle{
-        font-size: 1rem; 
-      
+        font-size: 1rem;
+
       }
-      
+
 
     .float-left{
       margin-left: 0px;
@@ -567,7 +574,7 @@ h2.empoweredheading::after {
       font-size: 1.2rem !important;
       text-align: left;
     }
-    #sources{
+    #sources, #figures{
       max-width: 90vw;
     }
     ol>li>a{
